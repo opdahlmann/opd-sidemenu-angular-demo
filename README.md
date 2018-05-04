@@ -74,7 +74,7 @@ To change the settings tweek the following properties:
 
 
     <opd-content (breakpointChanged)="breakpointChanged($event)"
-		    contentbackgroundcolor="#edeff2"
+		        contentbackgroundcolor="#edeff2"
 			headerbackgroundcolor="#327daa"
 			sidemenubackgroundcolor="#364147"
 			sidemenucolor="#ffffff"
