@@ -67,6 +67,9 @@ in the **code**:
 	    console.log(e);
     }
 
+ - e = 0 = Hidden
+ - e = 1 = Medium breakpoint
+ - e = 2 = Big breakpoint
 
 
 ## Settings
