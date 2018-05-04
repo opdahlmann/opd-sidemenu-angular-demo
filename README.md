@@ -46,3 +46,53 @@
           <!-- Put your main content here -->
        </div>
     </opd-content>
+
+
+## Events
+
+To detect when the breakpoint changes so you can change content in sidemenu add the following to your **html**:
+
+    <opd-content (breakpointChanged)="breakpointChanged($event)">
+           <div  slot="sidemenu">
+              <!-- Put your side menu content here -->
+           </div>
+           <div  slot="content">
+              <!-- Put your main content here -->
+           </div>
+    </opd-content>
+   
+in the **code**:
+
+    breakpointChanged(e){
+	    console.log(e);
+    }
+
+
+
+## Settings
+To change the settings tweek the following properties:
+
+
+    <opd-content (breakpointChanged)="breakpointChanged($event)"
+		    contentbackgroundcolor="#edeff2"
+			headerbackgroundcolor="#327daa"
+			sidemenubackgroundcolor="#364147"
+			sidemenucolor="#ffffff"
+			breakpoint-medium="767"
+			breakpoint-big="1023"
+			sidemenu-medium-width="57px"
+			sidemenu-big-width="250px"
+			header-hight="49px"
+			action-button-height="28px"
+			show-action-button="true"
+			action-button-height="28px"
+			action-button-background>
+           <div  slot="sidemenu">
+              <!-- Put your side menu content here -->
+           </div>
+           <div  slot="content">
+              <!-- Put your main content here -->
+           </div>
+        </opd-content>
+
+   
