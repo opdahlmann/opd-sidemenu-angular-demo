@@ -1,5 +1,9 @@
 # How to use opd-content
 
+opd-content is a web component you can use with any framework like react, angular, ionic…
+opd-content is a page frame with menu that has 2 breakpoints you can set yourself. The main content is scrollable and the menu has an event that listens to the browser width. It hides on less than the smallest breakpoint for mobile devices.
+
+
 **Install the package**
 
     npm i --save opd-content
