@@ -7,10 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  isLg:boolean;
 
 
   breakpointChanged(e){
-    console.log(e);
+    if (e.detail == 2){
+      this.isLg = true; 
+    } else {
+      this.isLg = false; 
+    }
   }
 }

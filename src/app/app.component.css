@@ -1,0 +1,33 @@
+.sidemenumain{
+    display: flex;
+    font-family: "Segoe UI light" !important;
+    font-size: 14px;
+    flex-direction:column;
+    padding-top:20px;
+   
+}
+.flex-child {
+    display: flex;
+    flex-direction:row;
+    padding-left:20px;
+    height: 30px;
+    padding-top:12px;
+    
+  }
+  .flex-child:hover {
+    background-color: #4f595f;
+    cursor: pointer;
+  }
+  .flex-isActive{
+    background-color: #4f595f;
+  }
+  .menuitem{
+    margin-top:0;
+    margin-left: 20px;
+    align-content: center;
+    align-items: center;
+   
+}
+.fas{
+    margin-top:3px;
+}

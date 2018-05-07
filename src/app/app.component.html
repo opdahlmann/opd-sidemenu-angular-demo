@@ -16,7 +16,39 @@
        action-button-background>
   <div slot="sidemenu">
   <div class="menu-content">
-    menu
+    <div *ngIf="isLg">
+    <div class="sidemenumain">
+      <div class="flex-child">
+          <i class="fas fa-chart-area"></i>  <div class="menuitem"> Menu item 1</div>
+      </div>
+      <div class="flex-child flex-isActive">
+          <i class="fas fa-bars"></i><div class="menuitem"> Menu item 2</div>
+    </div>
+      <div class="flex-child">
+          <i class="fab fa-bluetooth"></i><div class="menuitem"> Menu item 3</div>
+      </div>
+      <div class="flex-child">
+          <i class="fas fa-chart-bar"></i><div class="menuitem"> Menu item 4</div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="!isLg">
+      <div class="sidemenumain">
+          <div class="flex-child">
+              <i class="fas fa-chart-area"></i>
+          </div>
+          <div class="flex-child flex-isActive">
+              <i class="fas fa-bars"></i>
+        </div>
+          <div class="flex-child">
+              <i class="fab fa-bluetooth"></i>
+          </div>
+          <div class="flex-child">
+              <i class="fas fa-chart-bar"></i>
+          </div>
+        </div>
+  </div>  
+
   </div>
   </div>
   <div slot="content">
